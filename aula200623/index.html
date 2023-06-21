@@ -5,6 +5,13 @@
     https://www.w3schools.com/html/default.asp# site para aprenser HTML
     'ALT Z' para quebra de texto
     'CTRL ;' para começar um comentário
+    'CTRL SHIFT Z' para refazer
+    'CTRL D' para selecionar multiplas paravras
+    'CTRL F' busca palavra
+    'Segurar o ALT e clicar em outras linhas' digita em todas as linhas selecionadas ao mesmo tempo
+    'F1' para abrir o arquivo
+    'strong{Qualquer tag não só strong}' usa para fechar uma frase com a tag
+    'tag>tag2{}' mesma função de cima, mas com mais de uma tag 
 -->
 
 <!DOCTYPE html>
@@ -37,5 +44,36 @@
                 Ab error iste quos obcaecati atque dicta praesentium molestias tenetur maxime sed ipsa, iure, <hr> <!--Horizontal Row (não é uma quebra de linha, mas serve para criar diferentes recursos)-->
                 repellendus dolor optio officia quis voluptatem? Enim, ducimus. <!--A forma principal para quebra de texto e linha é usando 'p', o uso do 'br' não é recomendado pelos resultados em aparelhos móveis-->
             </p>
+            <!--
+                <b> negrito (Aparência)
+                <strong> negrito (Aparência + Relevância)
+                <i> itálico (Aparência)
+                <i> itálico (Aparência + Relevância)
+                <small> palavras pequenas (Aparência - Relevância)
+                <u> sublinhado (Aparência)
+            -->
+            <p>
+                <b> Lorem </b> ipsum dolor, sit amet consectetur adipisicing elit. Error accusantium tempore <b><i>tenetur deserunt dignissimos</i></b> in, sapiente sunt velit et voluptate quia fugit, maiores repellendus, commodi vel quod nihil vero non? <strong> Lorem </strong> ipsum dolor sit, <em>amet consectetur adipisicing</em> elit. Soluta aliquam eum aliquid molestias ut iste cumque ratione repellendus nisi asperiores. Dolores maxime asperiores similique quam doloribus <small>delectus amet sit odio.</small>
+            </p>
+            <!--Faz a leitura do texto, do jeito que ele está, além de funcionar para citação-->
+            <pre>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                
+Officia, quidem? Quod dolorum sapiente qui, autem corporis, rerum sequi reprehenderit
+                
+eius perferendis cupiditate praesentium magnam accusantium, in vel ipsa expedita! Porro.
+            </pre>
+
+            <!--Para texto sobreposto, e subposto-->
+            <pre>
+                2<sup>2</sup> = 4
+                log<sub>2</sub>4 = 2
+            </pre>
+
+            <!--Usado para escrever código-->
+            <code>
+                var num = 2;
+                console.log(num);
+            </code>
         </body>
     </html> <!--Tag de fechamento-->
