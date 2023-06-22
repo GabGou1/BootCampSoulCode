@@ -6,7 +6,46 @@
 </head>
 <body>
     <h1> Listas </h1>
-    <h2> Lista de Compras </h2>
+
+    <!--
+        <a> para criar uma âncora para outro site
+        target opção de onde abrir a nova guia
+        id é um atributo global (um atributo para qualquer elemento)
+        href="#" - procurar pelo id neste site
+        caso você selecione uma frase de um site e clique com o botão direito, você pode copiar o link para realçar a palavra
+    -->
+    <h2> Links </h2>
+    <ul>
+        <li>
+            <a href="https://www.google.com" target="_blank"> Google </a>
+        </li>
+        <li>
+            <a href="https://soulcode.com" target="_parent"> SoulCode </a>
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/pt-BR/" target="_top"> Mozila Doc </a>
+        </li>
+        <li>
+            <a href="#lista_compras"> Lista de Compras </a>
+        </li>
+        <li>
+            <a href="#receita_de_bolo"> Receita de Bolo </a>
+        </li>
+        <li>
+            <a href="#listas_aninhadas"> Listas Aninhadas </a>
+        </li>
+        <li>
+            <a href="#lista_de_descricao"> Lista de Descrição </a>
+        </li>
+        <li>
+            <a href="https://pt.wikipedia.org/wiki/Albert_Einstein#Prêmios_e_honrarias"> Albert Einsten </a>
+        </li>
+        <li>
+            <a href="https://github.com/GabGou1#:~:text=Gabriel%20Riberi%20Koa,-GabGou1"> Autor deste Site</a>
+        </li>
+    </ul>
+
+    <h2 id="lista_compras"> Lista de Compras </h2>
     <!--
     <ul> lista não ordenada
     <li> item na lista
@@ -20,7 +59,7 @@
     </ul>
 
     <!--<ol> indica uma lista ordenada-->
-    <h2> Receita </h2>
+    <h2 id="receita_de_bolo"> Receita </h2>
     <ol>
         <li> Aqueça o Forno à 180* </li>
         <li> 2 xícaras (chá) de açúcar </li>
@@ -35,7 +74,7 @@
     </ol>
 
     <!--Criar a outra lista dentro do <li> da lista inicial-->
-    <h2> Listas Aninhadas </h2>
+    <h2 id="listas_aninhadas"> Listas Aninhadas </h2>
     <ul>
         <li>
             Mamíferos
@@ -68,7 +107,7 @@
     <dt> item da lista de descrição
     <dd> descrição do item
     -->
-    <h2> Lista de Descrição </h2>
+    <h2 id="lista_de_descricao"> Lista de Descrição </h2>
     <dl>
         <dt> HTML </dt>
         <dd> HTML é uma linguagem de marcação aplicada para construção estrutural de uma página web </dd>
