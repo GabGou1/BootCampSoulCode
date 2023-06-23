@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriel Riberi Koa">
+    <title> Tabelas </title>
+</head>
+<body>
+    <h1> Tabelas </h1>
+    <!--
+    <table> é a estrutura para criar uma tabela
+    <tr> é uma linha da tabela
+    <td> representa a célula da tabela ou coluna
+    border é para criar uma borda para a tabela
+    tr>td*3(qualquer_coisa_dentro_do_td) é um atalho para criar uma linha e três colunas
+    th é a célula título
+    -->
+    <table border="1">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> E-mail </th>
+        </tr>
+        <tr>
+            <td> Gabriel </td>
+            <td> 20 </td>
+            <td> gabrielriberikoa@gmail.com </td>
+        </tr>
+        <tr>
+            <td> Lucas </td>
+            <td> 16 </td>
+            <td> lucasriberikoa@gmail.com </td>
+        </tr>
+    </table>
+    
+    <h2> Tabuada só 2 </h2>
+    <table border="1">
+        <tr>
+            <th> Tabuada </th>
+            <th> Do Numero 2 </th>
+        </tr>
+        <tr>
+            <td> 2 x 1 </td>
+            <td> 2 </td>
+        </tr>
+        <tr>
+            <td> 2 x 2 </td>
+            <td> 4 </td>
+        </tr>
+        <tr>
+            <td> 2 x 3 </td>
+            <td> 6 </td>
+        </tr>
+        <tr>
+            <td> 2 x 4 </td>
+            <td> 8 </td>
+        </tr>
+        <tr>
+            <td> 2 x 5 </td>
+            <td> 10 </td>
+        </tr>
+        <tr>
+            <td> 2 x 6 </td>
+            <td> 12 </td>
+        </tr>
+        <tr>
+            <td> 2 x 7 </td>
+            <td> 14 </td>
+        </tr>
+        <tr>
+            <td> 2 x 8 </td>
+            <td> 16 </td>
+        </tr>
+        <tr>
+            <td> 2 x 9 </td>
+            <td> 18 </td>
+        </tr>
+    </table>
+
+    <!--
+    rowspan mescla linhas
+    colspan mescla colunas
+    -->
+    <h2> Times de Futebol </h2>
+    <table border="1">
+        <tr>
+            <th colspan="4"> Tabela dos Times do Brasilheirão </th>
+        </tr>
+        <tr>
+            <th> Nome </th>
+            <th> Pontos </th>
+            <th> Saldo dos gols</th>
+            <th> Vitórias </th>
+        </tr>
+        <tr>
+            <td> Corinthians </td>
+            <td> 70 </td>
+            <td> 25 </td>
+            <td> 20 </td>
+        </tr>
+        <tr>
+            <td> Flamengo </td>
+            <td> 25 </td>
+            <td> 10 </td>
+            <td rowspan="2"> 10 </td>
+        </tr>
+        <tr>
+            <td> Palmeiras </td>
+            <td> 90 </td>
+            <td> 30 </td>
+        </tr>
+        <tr>
+            <td colspan="4"> Acesse nosso site www.brasilheirão.com.br </td>
+        </tr>
+    </table>
+</body>
+</html>
