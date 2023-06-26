@@ -19,43 +19,83 @@
     placeholder para definir um resultado esperado
     atributo name para dizer que são o mesmo campo, somente uma opção válida
     step é a variável que define o passo do range
+    cols e rows estipula o tamanho do bloco do textarea pelo número de letras
+    A cor é definida em HexaDecimal, com os valores em quatro casas, sendo elas 00 Vermelho 00 Verde 00 Azul
+    Variável value é a que aparecerá quando o formulário for enviado, é essêncial, junto a variável name
+    min e max define a quantidade de campos numéricos, number e range
+    minLength mínimo de caracteres
+    maxLength maximo de caracteres
     -->
     <form>
+        Teste <!--Faz uma mascara para o input do documento-->
+        <input type="text" name="teste" pattern="[0-9]{4,8}"><br>
+
         Nome:
-        <input type="text"><br>
+        <input type="text" name="nome" value="Nome Completo" maxlength="50"><br>
+
         E-mail:
-        <input type="email" placeholder="example@gmail.com"><br>
+        <input type="email" name="email" placeholder="example@gmail.com"><br>
+
         Senha:
-        <input type="password"><br>
+        <input type="password" name="senha"><br>
+
         Idade:
-        <input type="number"><br>
+        <input type="number" name="idade" value="Idade" max="150" min="0"><br>
+
         Data de Hoje:
-        <input type="text" value="26/06/2023" disabled><br>
+        <input type="text" name="dataHj" value="26/06/2023" disabled><br>
+
         Data de Nascimento:
-        <input type="date"><br>
+        <input type="date" name="dataNasc" min="2003-04-05" max="2023-06-26"><br>
+
         Telefone:
-        <input type="tel"><br>
+        <input type="tel" name="telefone"><br>
+
         URL da Porta:
-        <input type="url"><br>
+        <input type="url" name="url"><br>
+
         Frente do RG:
-        <input type="file" accept=".png, .jpg" multiple><br>
+        <input type="file" name="rg" accept=".png, .jpg" multiple><br>
+
         Escolha sua cor favorita:
-        <input type="color"><br>
+        <input type="color" name="cor" value="#FF0000"><br>
+
         Estado Civil: <br>
-        Solteiro <input type="radio" name="estado_civil"><br>
-        Casado <input type="radio" name="estado_civil"><br>
-        Divorciado <input type="radio" name="estado_civil"><br>
+        Solteiro <input type="radio" name="estado_civil" value="Solteiro"><br>
+        Casado <input type="radio" name="estado_civil" value="Casado"><br>
+        Divorciado <input type="radio" name="estado_civil" value="Divorciado"><br>
+
         Aceita os Termos de Uso?
-        <input type="checkbox"><br>
+        <input type="checkbox" name="ternisdeUso"><br>
+
         Nível de inglês:
-        1 <input type="range" min="1" max="5" step="1"> 5 <br>
+        1 <input type="range" name="ingles" min="1" max="5" step="1"> 5 <br>
+        
         Estado
-        <select>
-            <option> Ceará </option>
-            <option> São Paulo </option>
-            <option>  </option>
+        <select name="estado">
+            <option disabled selected>Selecione um Estado</option>
+            <option value="CE"> Ceará </option>
+            <option value="SP"> São Paulo </option>
+            <option value="RJ"> Rio de Janeiro </option>
         </select><br>
-        <button> Enviar </button>
+
+        Fale um pouco sobre você:<br>
+        <textarea name="fale" cols="50" rows="5">Texto Padrão</textarea><br>
+
+        <button type="button"> Não faz Nada </button>
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Limpar</button>
+        <br>
+        <input type="button" value="Não faz Nada">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+        <!--
+        button é o botão comum
+        submit submete as informações do formulário
+        reset limpa as imformações
+        -->
+
     </form>
 </body>
 </html>
