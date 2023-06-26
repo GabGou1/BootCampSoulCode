@@ -18,6 +18,7 @@
     atributo disable para impedir que o usuário atualize o campo
     placeholder para definir um resultado esperado
     atributo name para dizer que são o mesmo campo, somente uma opção válida
+    step é a variável que define o passo do range
     -->
     <form>
         Nome:
@@ -46,6 +47,14 @@
         Divorciado <input type="radio" name="estado_civil"><br>
         Aceita os Termos de Uso?
         <input type="checkbox"><br>
+        Nível de inglês:
+        1 <input type="range" min="1" max="5" step="1"> 5 <br>
+        Estado
+        <select>
+            <option> Ceará </option>
+            <option> São Paulo </option>
+            <option>  </option>
+        </select><br>
         <button> Enviar </button>
     </form>
 </body>
