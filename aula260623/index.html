@@ -11,14 +11,41 @@
     <form> para criação de formulário em html
     <input> para definir um campo no formulário
     tipo do input influencia no que vai ser apresentado na interface
+    atributo accept define qual tipo de documento poderá ser enviado
+    size expecifica o tamanho do arquivo em bits
+    multiple é o atributo booleano para colocar mais de um  documento
+    todos os inputs possuem value, caso você atribua um valor, ele aparecerá na tela automaticamente
+    atributo disable para impedir que o usuário atualize o campo
+    placeholder para definir um resultado esperado
+    atributo name para dizer que são o mesmo campo, somente uma opção válida
     -->
     <form>
         Nome:
         <input type="text"><br>
         E-mail:
-        <input type="email"><br>
+        <input type="email" placeholder="example@gmail.com"><br>
         Senha:
         <input type="password"><br>
+        Idade:
+        <input type="number"><br>
+        Data de Hoje:
+        <input type="text" value="26/06/2023" disabled><br>
+        Data de Nascimento:
+        <input type="date"><br>
+        Telefone:
+        <input type="tel"><br>
+        URL da Porta:
+        <input type="url"><br>
+        Frente do RG:
+        <input type="file" accept=".png, .jpg" multiple><br>
+        Escolha sua cor favorita:
+        <input type="color"><br>
+        Estado Civil: <br>
+        Solteiro <input type="radio" name="estado_civil"><br>
+        Casado <input type="radio" name="estado_civil"><br>
+        Divorciado <input type="radio" name="estado_civil"><br>
+        Aceita os Termos de Uso?
+        <input type="checkbox"><br>
         <button> Enviar </button>
     </form>
 </body>
