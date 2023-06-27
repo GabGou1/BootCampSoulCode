@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriel Riberi Koa">
+    <title>Formulário SoulCode</title>
+</head>
+<body>
+    <h1>Registrar</h1>
+    <form>
+        <fieldset>
+            <legend>Registro</legend>
+            <table border="1" style="width: 100%;">
+                <colgroup>
+                <col style="width: 50%;">
+                <col style="width: 50%;">
+                </colgroup>
+                <tr>
+                    <td><label for="nome">* Nome Completo:</label></td>
+                    <td><input type="text" name="nome" id="nome" maxlength="200" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">* E-mail:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="example@dominio.com" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="senha">* Senha:</label></td>
+                    <td><input type="password" name="senha" id="senha" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="UF">* UF:</label></td>
+                    <td><input type="text" name="UF" id="UF" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="cidade">* Cidade:</label></td>
+                    <td><input type="text" name="cidade" id="cidade" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="rua">* Rua:</label></td>
+                    <td><input type="text" name="rua" id="rua" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="numero">* Numero:</label></td>
+                    <td><input type="text" name="numero" id="numero" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="CEP">* CEP:</label></td>
+                    <td><input type="number" name="CEP" id="CEP" pattern="[0-8]" required style="width: 99%;"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="bio">* BIO:</label></td>
+                    <td><textarea name="bio" id="bio" cols="100" rows="5"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="areaDeAtuacao">Qual a sua Área de Atuação:</label></td>
+                    <td>
+                        <select name="areaDeAtuacao" id="areaDeAtuacao" required style="border: none;">
+                            <option value="fullstack">FullStack</option>
+                            <option value="cloud">Cloud</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            </fieldset><br>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+            <a href="login.html"><button type="button">Login</button></a>
+        </form>
+</body>
+</html>
