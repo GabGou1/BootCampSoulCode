@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Gabriel Riberi Koa" />
+    <title>Layout da Pagina</title>
+  </head>
+  <body>
+    <!--
+    action é um atributo para o form, para onde será enviado o formulário
+    method é a forma que será enviado o formulário (POST, GET)
+    legend é a label do fieldset
+    <header> -> Estrutura do cabeçalho da página
+    <main> -> Estrutura o corpo principal da página
+    <footer> -> Estrutura do rodapé da página
+    <aside> -> Estrutura uma barra lateral
+    <nav> -> (Navegação) Links
+    <section> -> Seção da Página
+    <article> -> Define um artigo na página
+    <div> -> Conteiner de elementos genéricos
+    cabeçalho é um atributo para alterar a fonte do h
+    -->
+    <header>
+      <h1>Tags</h1>
+
+      <nav>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+        <a href="">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 title="cabeçalho">Cadastro de SuperHeroi</h2>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              maxlength="100"
+              required
+            /><br />
+
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              maxlength="200"
+              required
+            /><br />
+
+            <label for="poder">Poderes:</label>
+            <input
+              type="text"
+              name="poder"
+              id="poder"
+              maxlength="500"
+              required
+              placeholder="Digite seus poderes separados"
+            /><br />
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="rua">Rua:</label>
+            <input
+              type="text"
+              name="rua"
+              id="rua"
+              maxlength="150"
+              required
+            /><br />
+
+            <label for="numero">Numero:</label>
+            <input
+              type="text"
+              name="numero"
+              id="numero"
+              maxlength="150"
+              required
+            /><br />
+
+            <label for="estado">UF:</label>
+            <input
+              type="text"
+              name="estado"
+              id="estado"
+              maxlength="150"
+              required
+            /><br />
+
+            <label for="cidade">Cidade:</label>
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              maxlength="150"
+              required
+            /><br />
+          </fieldset>
+          <br />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <section>
+        <article>
+          <h3>Artigo 3</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            modi! Iste dolorum eaque cupiditate! Veritatis, sequi adipisci
+            itaque consequuntur tempora pariatur ratione, harum, ut earum modi
+            molestiae ad! Perferendis, obcaecati!
+          </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h4>Artigo 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            ad tenetur deserunt similique illum repudiandae cum. Perspiciatis
+            officiis temporibus harum, autem mollitia dolore nisi molestias
+            dicta voluptas ea sunt est?
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <div><div>Lateral</div></div>
+    </aside>
+
+    <footer>
+      &copy; Todos os direitos reservados SoulCode Academy e Porto Seguro
+    </footer>
+  </body>
+</html>
