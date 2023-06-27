@@ -25,6 +25,7 @@
     min e max define a quantidade de campos numéricos, number e range
     minLength mínimo de caracteres
     maxLength maximo de caracteres
+    required define um campo obrigatório
     -->
     <form>
         Teste <!--Faz uma mascara para o input do documento-->
@@ -37,7 +38,7 @@
         <input type="email" name="email" placeholder="example@gmail.com"><br>
 
         Senha:
-        <input type="password" name="senha"><br>
+        <input type="password" name="senha" required><br>
 
         Idade:
         <input type="number" name="idade" value="Idade" max="150" min="0"><br>
